@@ -7,7 +7,8 @@ import time
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from utils import parse_arg_boolean, parse_arg_dalle_version, parse_arg_save_dir
+from consts import IMAGES_OUTPUT_DIR
+from utils import parse_arg_boolean, parse_arg_dalle_version, parse_arg_format, parse_arg_save_dir
 from consts import ModelSize
 
 app = Flask(__name__)
@@ -21,8 +22,8 @@ parser = argparse.ArgumentParser(description = "A DALL-E app to turn your textua
 parser.add_argument("--port", type=int, default=8000, help = "backend port")
 parser.add_argument("--model_version", type = parse_arg_dalle_version, default = ModelSize.MINI, help = "Mini, Mega, or Mega_full")
 parser.add_argument("--save_to_disk", type = parse_arg_boolean, default = False, help = "Should save generated images to disk")
+parser.add_argument("--format", type = parse_arg_format, default = "JPEG", help = "Format to save images in")
 parser.add_argument("--save_dir", type = parse_arg_save_dir, default = "generations", help = "Custom directory for saved images")
-
 args = parser.parse_args()
 
 @app.route("/dalle", methods=["POST"])
@@ -40,10 +41,10 @@ def generate_images_api():
     
     for idx, img in enumerate(generated_imgs):
         if args.save_to_disk: 
-            img.save(os.path.join(dir_name, f'{idx}.jpeg'), format="JPEG")
+            img.save(os.path.join(dir_name, f'{idx}.{args.format}'), format=args.format)
 
         buffered = BytesIO()
-        img.save(buffered, format="JPEG")
+        img.save(buffered, format=args.format)
         img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
         generated_images.append(img_str)
 

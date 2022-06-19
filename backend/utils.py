@@ -15,5 +15,8 @@ def parse_arg_dalle_version(value):
     value = value.lower()
     return ModelSize[value.upper()]
 
+def parse_arg_format(value):
+  return value
+  
 def parse_arg_save_dir(value):
 	return value
