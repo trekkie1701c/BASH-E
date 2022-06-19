@@ -1,6 +1,6 @@
 <p align="center">
 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/woman-artist_1f469-200d-1f3a8.png" width="60" alt="Dali">
-  <h2 align="center">BASH-E-E</h2>
+  <h2 align="center">BASH-E</h2>
 </p>
 
 A command line DALL-E Playground, based largely on the wonderful work of Sahar Mor's [DALL-E Playground](https://github.com/saharmor/dalle-playground).  Uses the open-source version of
