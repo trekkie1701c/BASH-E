@@ -12,7 +12,7 @@ OpenAI's [DALL-E](https://openai.com/blog/dall-e/), based on [DALL-E Mini](https
 2.  cd $repo/backend
 3.  pip install -r requirements.txt
 4.  [Install PyTorch](https://pytorch.org/get-started/locally/)
-5.  ./BASH-E.py
+5.  python BASH-E.py
 
 BASH-E takes the following arguments:
 
