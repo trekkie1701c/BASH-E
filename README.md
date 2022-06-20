@@ -10,7 +10,7 @@ OpenAI's [DALL-E](https://openai.com/blog/dall-e/), based on [DALL-E Mini](https
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/trekkie1701c/BASH-E/blob/main/backend/BASH-E%20Notebook.ipynb)
 
-Google Colab restricts usage based both on tier and recent personal usage; if you've never used colab before, you may be able to run mega_full for free, although after some time you won't be allocated powerful enough systems for this, or at least, will be unlikely to.  Conversely, if you run this for several hours even with a Pro+ subscription, you may fund yourself allocated a system that doesn't have sufficient memory to run mega_full, and you'll need to wait a few hours before you can try again.
+Google Colab restricts usage based both on tier and recent personal usage; if you've never used colab before, you may be able to run mega_full for free, although after some time you won't be allocated powerful enough systems for this, or at least, will be unlikely to.  Conversely, if you run this for several hours even with a Pro+ subscription, you may find yourself allocated a system that doesn't have sufficient memory to run mega_full, and you'll need to wait a few hours before you can try again.
 
 Note that only Pro+ offers background execution, although runtimes will be destroyed after 24 hours regardless.
 
