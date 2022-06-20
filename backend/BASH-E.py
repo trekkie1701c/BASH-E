@@ -14,7 +14,7 @@ from dalle_model import DalleModel
 parser = argparse.ArgumentParser(description = "BASH-E. A DALL-E app to turn your text prompts into images!")
 parser.add_argument("--model_version", type = parse_arg_dalle_version, default = ModelSize.MINI, help = "Mini, Mega, or Mega_Full.  Default Mini")
 parser.add_argument("--save_dir", type = parse_arg_save_dir, default = "generations", help = "Custom directory for saved images.  Default generations")
-parser.add_argument("--format", type = parse_arg_format, default = "JPEG", help = "Format to save images in.  Default PNG")
+parser.add_argument("--format", type = parse_arg_format, default = "PNG", help = "Format to save images in.  Default PNG")
 parser.add_argument("--terminate", type = parse_arg_terminate, default = False, help = "Terminate when complete?  Default No")
 parser.add_argument("--num", type = parse_arg_num, default = 10, help = "Number of images to generate.  Default 10")
 parser.add_argument("--prompt", type = parse_arg_prompt, default = "A quick brown fox jumping over a lazy dog", help = "Text Prompt to use")
