@@ -26,10 +26,3 @@ def parse_arg_save_dir(value):
 
 def parse_arg_prompt(value):
 	return value
-
-def parse_arg_num(value):
-	value=int(value)
-	return value
-
-def parse_arg_terminate(value):
-	return value
