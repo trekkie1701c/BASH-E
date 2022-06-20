@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/woman-artist_1f469-200d-1f3a8.png" width="60" alt="Dali">
+<img src="https://raw.githubusercontent.com/trekkie1701c/BASH-E/522540b5398b0ca98ea44ce738534821ec7c6890/backend/RobotCreation.jpg" width="256" alt="BASH-E">
   <h2 align="center">BASH-E</h2>
 </p>
 
