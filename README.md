@@ -23,7 +23,11 @@ BASH-E takes the following arguments:
 
 --save_dir (custom directory to save in)
 
+--model_version (which version to use).  Supports mini (default), mega, and mega_full.  Mini tends to work decently on lightweight systems with little RAM and is fast enough for generation to play around with on slower CPUs.  Mega requires a decent amount of RAM (>8GB) and a GPU with sufficient VRAM to speed up the process a bit.  Mega_Full requires >12GB of RAM/VRAM, although CPU-only generation can take upwards of an hour per image.  Note that it's not currently possible to use system memory in place of insufficient VRAM unless you do not have a GPU, or otherwise do not have a GPU processing it.
+
 Currently this is just a quick and dirty setup, and I plan on expanding more as time goes on.
+
+The original istructions from Sahar indicated that PyConda was needed to run this; in my clearing of excess requirements I found that it wasn't necessary (at least for CPU builds) and it's not present when installing it on Colab.  However, if you run into issues it may be a place to look.
 
 ## Acknowledgements
 
