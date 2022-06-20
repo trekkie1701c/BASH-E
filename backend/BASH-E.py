@@ -6,6 +6,7 @@ import time
 
 from utils import parse_arg_dalle_version, parse_arg_save_dir, parse_arg_format, parse_arg_prompt, parse_arg_boolean
 from consts import ModelSize
+from ascii import convert
 
 print("--> Starting BASH-E.  This may take several minutes, depending on model size.")
 
@@ -18,6 +19,7 @@ parser.add_argument("--format", type = parse_arg_format, default = "PNG", help =
 parser.add_argument("--interactive", type = parse_arg_boolean, default = False, help = "Interactive mode.  Prompts you to supply prompt/number of images at the start and after each set of image generation.  Ignores --num and --prompt.  Default False")
 parser.add_argument("--num", type = int, default = 10, help = "Number of images to generate.  Default 10")
 parser.add_argument("--prompt", type = parse_arg_prompt, default = "A quick brown fox jumping over a lazy dog", help = "Text Prompt to use")
+parser.add_argument("--ascii", type = parse_arg_boolean, default = False, help = "Draw ASCII art of generated images as they're generated.")
 args = parser.parse_args()
 
 print(f"DALL-E model {args.model_version} loading...")
@@ -41,7 +43,11 @@ def generate(prompt: str, num: int):
 		generated_img=dalle_model.generate_images(prompt, 1)
 		for img in generated_img:
 			img.save(os.path.join(dir_name, f'{idx}.{args.format}'), format=args.format)
+			if (args.ascii):
+				convert(img)
+				
 			print(f"Saved {idx}.{args.format}...")
+			
 
 	print(f"Created {num} images from text prompt [{prompt}]")
 	

@@ -37,6 +37,8 @@ BASH-E takes the following arguments:
 
 --interactive (run in interactive mode).  True/False.  May not work in Colab.  Default False.
 
+--ascii (draw ascii art as images are generated). True/False.  Default False.
+
 ## Which Model do I use?
 
 Currently there are three models to choose from:
