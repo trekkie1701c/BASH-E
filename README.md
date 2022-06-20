@@ -51,7 +51,7 @@ Currently there are three models to choose from:
 
 Currently this is just a quick and dirty setup, and I plan on expanding more as time goes on.  This was made primarily because I found myself wanting to generate many hundreds to thousands of images at once from a single prompt for various reasons, and although Sahar's work is great for seeing images as they're generated and trying out a bunch of different prompts rapidly, it's a little cumbersome when you want to actually generate a lot of images at once, and several things on it don't work if you want to generate more than 5 images on mega_full with Google Colab.
 
-The original istructions from Sahar indicated that PyConda was needed to run this; in my clearing of excess requirements I found that it wasn't necessary (at least for CPU builds) and it's not present when installing it on Colab.  However, if you run into issues it may be a place to look.
+The original istructions from Sahar indicated that PyTorch was needed to run this; in my clearing of excess requirements I found that it wasn't necessary (at least for CPU builds) and it's not present when installing it on Colab.  However, if you run into issues it may be a place to look.
 
 ## Acknowledgements
 
