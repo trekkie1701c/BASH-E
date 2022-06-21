@@ -57,7 +57,7 @@ The original istructions from Sahar indicated that PyTorch was needed to run thi
 
 ## Acknowledgements
 
-This Repo is laregly a fork of [Sahar Mor's](https;//github.com/saharmor) Dall-E Playground repository.  I'm not a skilled coder, and a lot of the Python that I've learned in here is either a modification from it, directly from there, or at least, used as a framework for later code.
+This Repo is laregly a fork of [Sahar Mor's](https://github.com/saharmor) Dall-E Playground repository.  I'm not a skilled coder, and a lot of the Python that I've learned in here is either a modification from it, directly from there, or at least, used as a framework for later code.
 
 The repo this was based on is a full-stack flavour of [Boris Dayma's](https://github.com/borisdayma) DALL-E Mini
 repository. 
