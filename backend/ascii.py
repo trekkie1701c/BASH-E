@@ -1,6 +1,3 @@
-import time
-
-from PIL import Image
 from picharsso import new_drawer
 
 def convert(image):

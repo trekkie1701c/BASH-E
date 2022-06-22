@@ -6,7 +6,6 @@ import time
 
 from utils import parse_arg_dalle_version, parse_arg_save_dir, parse_arg_format, parse_arg_prompt, parse_arg_boolean
 from consts import ModelSize
-from ascii import convert
 
 print("--> Starting BASH-E.  This may take several minutes, depending on model size.")
 
@@ -21,6 +20,11 @@ parser.add_argument("--num", type = int, default = 10, help = "Number of images 
 parser.add_argument("--prompt", type = parse_arg_prompt, default = "A quick brown fox jumping over a lazy dog", help = "Text Prompt to use")
 parser.add_argument("--ascii", type = parse_arg_boolean, default = False, help = "Draw ASCII art of generated images as they're generated.")
 args = parser.parse_args()
+
+if (args.ascii):
+	from ascii import convert
+	from PIL import Image
+	convert(Image.open("RobotCreation.jpg"))
 
 print(f"DALL-E model {args.model_version} loading...")
 
