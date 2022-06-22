@@ -24,7 +24,7 @@ args = parser.parse_args()
 if (args.ascii):
 	from ascii import convert
 	from PIL import Image
-	convert(Image.open("RobotCreation.jpg")
+	convert(Image.open("RobotCreation.jpg"))
 
 print(f"DALL-E model {args.model_version} loading...")
 
