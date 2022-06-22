@@ -37,7 +37,7 @@ BASH-E takes the following arguments:
 
 --interactive (run in interactive mode).  True/False.  May not work in Colab.  Default False.
 
---ascii (draw ascii art as images are generated). True/False.  Default False.  Does not work in Colab.
+--ascii (draw ascii art as images are generated). True/False.  Default False.  Does not work in Colab, or versions of Python less than 3.8.
 
 ## Which Model do I use?
 
