@@ -26,3 +26,12 @@ def parse_arg_save_dir(value):
 
 def parse_arg_prompt(value):
 	return value
+
+def parse_arg_list(value):
+	if value == "":
+		return ""
+	else:
+		listfile = open(value, "r")
+		value = listfile.read()
+		value = value.splitlines()
+		return value
