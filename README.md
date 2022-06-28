@@ -39,6 +39,8 @@ BASH-E takes the following arguments:
 
 --ascii (draw ascii art as images are generated). True/False.  Default False.  Does not work in Colab, or versions of Python less than 3.8.
 
+--list (filename).  Generates based on prompts stored in file, format should be "prompt, number of images" with one prompt per line.
+
 ## Which Model do I use?
 
 Currently there are three models to choose from:
