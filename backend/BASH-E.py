@@ -54,7 +54,7 @@ def generate(prompt: str, num: int):
 			print(f"Saved {idx}.{args.format}...")
 
 
-	print(f"Created {num} images from text prompt [{prompt}]")
+	print(f"Created {num} images from text prompt [{prompt}]\a")
 
 while (args.interactive):
 	print("Running in interactive mode.  Ctrl+C to quit...")
